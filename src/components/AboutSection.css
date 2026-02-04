@@ -7,6 +7,25 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2.5rem 1.5rem;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+}
+
 .about-background {
   position: absolute;
   top: 0;
@@ -32,6 +51,25 @@
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .about-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    gap: 1.5rem;
+  }
+}
+
 .about-content h2 {
   font-size: 2.5rem;
   color: #222;
@@ -43,6 +81,28 @@
   display: inline-block;
 }
 
+@media (max-width: 1024px) {
+  .about-content h2 {
+    font-size: 2.2rem;
+    padding: 0.9rem 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 2rem;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 1.5rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -51,6 +111,28 @@
   background: rgba(255, 255, 255, 0.85);
   padding: 1rem;
   border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content p {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content p {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    line-height: 1.6;
+  }
 }
 
 .btn-primary {
@@ -68,6 +150,20 @@
   background-color: #e67e22;
 }
 
+@media (max-width: 768px) {
+  .btn-primary {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
 .about-image img {
   width: 100%;
   border-radius: 10px;
@@ -81,5 +177,16 @@
 
   .about-content h2 {
     font-size: 2rem;
+  }
+
+  .about-image img {
+    height: auto;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image img {
+    max-height: 250px;
   }
 }

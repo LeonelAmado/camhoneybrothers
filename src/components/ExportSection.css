@@ -6,6 +6,26 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .export-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .export-section {
+    padding: 2.5rem 1.5rem;
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  .export-section {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+}
+
 .export-background {
   position: absolute;
   top: 0;
@@ -32,6 +52,30 @@
   padding: 2rem 0;
 }
 
+@media (max-width: 1024px) {
+  .export-container {
+    gap: 2rem;
+    padding: 1.5rem 0;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .export-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    min-height: auto;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .export-container {
+    gap: 1.5rem;
+    padding: 0;
+  }
+}
+
 .export-container h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -40,11 +84,49 @@
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.3));
 }
 
+@media (max-width: 1024px) {
+  .export-container h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .export-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .export-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .export-description {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #000000;
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 1024px) {
+  .export-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .export-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .export-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
 
 .export-image {
@@ -64,6 +146,31 @@
   box-shadow: 0 15px 50px rgba(243, 156, 18, 0.3);
 }
 
+@media (max-width: 1024px) {
+  .export-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .export-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .export-image {
+    height: 250px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .export-image {
+    height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
   .export-container {
     grid-template-columns: 1fr;
@@ -80,6 +187,17 @@
 
   .export-image {
     height: 300px;
+  }
+
+  .export-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .export-image {
+    height: 250px;
+    border-radius: 8px;
   }
 
   .export-content {

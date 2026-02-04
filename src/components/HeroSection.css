@@ -8,6 +8,26 @@
   justify-content: center;
 }
 
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 70vh;
+    min-height: 350px;
+  }
+}
+
 .hero-background {
   position: absolute;
   top: 0;
@@ -45,6 +65,27 @@
   animation: fadeInUp 1s ease-out;
 }
 
+@media (max-width: 1024px) {
+  .hero-content {
+    max-width: 700px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    max-width: 95%;
+    padding: 0.75rem;
+  }
+}
+
 .hero-content h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -53,10 +94,52 @@
   letter-spacing: 2px;
 }
 
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .btn-secondary {
@@ -80,6 +163,27 @@
   box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
 }
 
+@media (max-width: 1024px) {
+  .btn-secondary {
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-secondary {
+    padding: 0.8rem 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-secondary {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -88,35 +192,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1.1rem;
-  }
-
-  .btn-secondary {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    height: 80vh;
-    min-height: 400px;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
   }
 }
